@@ -1,0 +1,15 @@
+
+<h1 class = "text-center">Our Great Team</h1>
+
+<ul class="list-inline text-center">
+  <% ["Guillaume", "Matt"].each do |member| %>
+    <li>
+      <%= image_tag "#{member}.jpg", class: "img-circle", style: "width: 100px" %>
+      <h3><%= member.capitalize %></h3>
+    </li>
+  <% end %>
+</ul>
+
+<div class="text-align text-center">
+  <i class="fa fa-envelope" aria-hidden="true"></i><p> teamdestar@lewagon.com</p>
+</div>
